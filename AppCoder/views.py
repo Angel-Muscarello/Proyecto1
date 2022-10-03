@@ -2,17 +2,17 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def inicio(recuest):
-    return render(recuest, "AppCoder/inicio.html")
+def inicio(request):
+    return render(request, "AppCoder/index.html")
 
-def curso(recuest):
-    return render(recuest, "AppCoder/curso.html")
+def curso(request):
+    return render(request, "AppCoder/curso.html")
 
-def profesor(recuest):
-    return render(recuest, "AppCoder/profesor.html")
+def profesor(request):
+    return render(request, "AppCoder/profesor.html")
 
-def estudiante(recuest):
-    return render(recuest, "AppCoder/estudiante.html")
+def estudiante(request):
+    return render(request, "AppCoder/estudiante.html")
 
-def entregable(recuest):
-    return render(recuest, "AppCoder/entregable.html")
+def entregable(request):
+    return render(request, "AppCoder/entregable.html")
